@@ -22,8 +22,14 @@ public final class Personnels {
 			this.date_naissance = date_naissance;
 		}
 		
-		public void add_tel(int tel) {
+		public Builder function(String fonc) {
+			this.fonction = fonc;
+			return this;
+		}
+		
+		public Builder add_tel(int tel) {
 			this.num_tel.add(tel);
+			return this;
 		}
 		
 		public Personnels build() {
