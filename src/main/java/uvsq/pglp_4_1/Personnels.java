@@ -1,7 +1,7 @@
 package uvsq.pglp_4_1;
 import java.util.ArrayList;
 
-public final class Personnels {
+public final class Personnels implements GroupePersonnes{
 
 	private String nom;
 	private String prenom;
@@ -42,6 +42,10 @@ public final class Personnels {
 		fonction = builder.fonction;
 		num_tel = builder.num_tel;
 		date_naissance = builder.date_naissance;
+	}
+	
+	public void print() {
+		System.out.println(nom + " ");
 	}
 
 }
