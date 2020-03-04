@@ -31,7 +31,11 @@ public final class Personnels {
 		}
 	}
 	public Personnels(Builder builder) {
-		
+		nom = builder.nom;
+		prenom = builder.prenom;
+		fonction = builder.fonction;
+		num_tel = builder.num_tel;
+		date_naissance = builder.date_naissance;
 	}
 
 }
