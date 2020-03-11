@@ -7,10 +7,14 @@ public class CompositePersonnels implements GroupePersonnes {
 	int id;
 	private ArrayList<GroupePersonnes> personnes = new ArrayList<GroupePersonnes>();
 	
+	
 	public CompositePersonnels(int id) {
 		this.id = id;
 	}
 	
+	public ArrayList<GroupePersonnes> getPersonnes(){
+		return personnes;
+	}
 	public void print() {
 			System.out.println(id);
 			for(GroupePersonnes g : personnes) {

@@ -47,14 +47,20 @@ public class App
         g1.add(person1);
         g1.add(person2);
         g1.add(person3);
-        CompositePersonnels g2 = new CompositePersonnels(1);
+        CompositePersonnels g2 = new CompositePersonnels(2);
         g2.add(person4);
         g2.add(person5);
         g2.add(person6);
-        CompositePersonnels g3 = new CompositePersonnels(1);
+        CompositePersonnels g3 = new CompositePersonnels(3);
         g3.add(g2);
         g3.add(g1);
-        g3.print();
+        
+        
+        AfficheParGroupe collection  = new AfficheParGroupe(g3);
+        
+        for(Iterator<AfficheParGroupe> i = collection.getIterator() ; i.hasNext(); ) {
+        	System.out.println(i.next());
+        }
 
     }
 }

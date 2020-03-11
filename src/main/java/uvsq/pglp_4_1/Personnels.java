@@ -20,6 +20,7 @@ public final class Personnels implements GroupePersonnes{
 			this.nom = nom;
 			this.prenom = prenom;
 			this.date_naissance = date_naissance;
+			num_tel = new ArrayList<Integer>();
 		}
 		
 		public Builder function(String fonc) {
@@ -46,6 +47,11 @@ public final class Personnels implements GroupePersonnes{
 	
 	public void print() {
 		System.out.println(nom + " ");
+	}
+
+	public ArrayList<GroupePersonnes> getPersonnes() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
