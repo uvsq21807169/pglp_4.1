@@ -16,7 +16,7 @@ public class AfficheParGroupe {
 	
 	
 	private class GrpIterator implements Iterator{
-		int index;
+		int index =0;
 		
 		public GrpIterator() {
 			

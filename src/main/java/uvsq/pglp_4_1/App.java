@@ -59,7 +59,7 @@ public class App
         AfficheParGroupe collection  = new AfficheParGroupe(g3);
         
         for(Iterator<AfficheParGroupe> i = collection.getIterator() ; i.hasNext(); ) {
-        	System.out.println(i.next());
+        	((GroupePersonnes) i.next()).print();
         }
 
     }
