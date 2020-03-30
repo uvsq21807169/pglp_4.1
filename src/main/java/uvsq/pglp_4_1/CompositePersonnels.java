@@ -17,9 +17,6 @@ public class CompositePersonnels implements GroupePersonnes {
 	}
 	public void print() {
 			System.out.println(id);
-			for(GroupePersonnes g : personnes) {
-				g.print();
-			}
 	}
 	
 	public void add(GroupePersonnes groupe) {

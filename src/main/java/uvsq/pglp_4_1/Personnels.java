@@ -46,7 +46,7 @@ public final class Personnels implements GroupePersonnes{
 	}
 	
 	public void print() {
-		System.out.println(nom + " ");
+		System.out.println(nom + " : ");
 	}
 
 	public ArrayList<GroupePersonnes> getPersonnes() {

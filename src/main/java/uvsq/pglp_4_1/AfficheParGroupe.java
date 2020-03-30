@@ -36,14 +36,17 @@ public class AfficheParGroupe {
 		}
 		
 		public boolean hasNext() {
-			if(index < persApres.size())
+			if(index < persApres.size()) {
 				return true;
+			}
+			
 			return false;
 		}
 
 		public GroupePersonnes next() {
+			GroupePersonnes gp = persApres.get(index);
 			index++;
-			return persApres.get(index);
+			return gp;
 		}
 	}
 	

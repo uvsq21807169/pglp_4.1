@@ -10,7 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         
         Personnels person1 = new Personnels
         		.Builder("ismail 1", "ben", LocalDateTime.now())
@@ -52,8 +51,8 @@ public class App
         g2.add(person5);
         g2.add(person6);
         CompositePersonnels g3 = new CompositePersonnels(3);
-        g3.add(g2);
         g3.add(g1);
+        g3.add(g2);
         
         
         AfficheParGroupe collection  = new AfficheParGroupe(g3);
